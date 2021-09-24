@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+/* variáveis já declaradas no site do Streamlabs OBS; erros relacionados aos dois pontos */
+body {
+    background: {background_color}; 
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: {font_size}; 
+    line-height: 1.5em;
+    color: {text_color};
+}
+
+#log>div {
+    animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards; 
+    -webkit-animation: fadeInRight .3s ease forwards, fadeOut 0.5s ease {message_hide_delay} forwards;
+}
+
+.colon {
+    display: none;
+}
+
+#log {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px 10px;
+    width: 100%;
+}
+
+#log>div {
+  margin: 13px;
+}
+
+#log>div.deleted {
+    visibility: hidden;
+}
+
+#log .emote {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 0.4em 0.2em;
+    position: relative;
+}
+
+#log .emote img {
+    display: inline-block;
+    height: 1em;
+    opacity: 0;
+}
+
+#log .message,#log .meta {
+    vertical-align: top;
+    display: table-cell;
+    padding-bottom: 0.1em;
+}
+
+#log .meta {
+    display: inline;
+  	background: #d08908;
+  	border-radius: 18px;
+    padding: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-style: solid;
+  	border-width: 3px;
+  	border-color: #613B1F;
+  	border-width: 3px;
+  	position: relative;
+		left: 10px;
+}
+
+#log .message {
+  	color: rgb 0 0 0;
+  	background: #ffff;
+  	padding: 10px 10px 10px 10px; 
+  	border-radius: 10px;
+    word-wrap: break-word;
+    width: 65%;
+  	margin-left: 50px;
+  	border-style: solid;
+  	border-width: 1.5px;
+  	border-color: #613B1F;
+}
+
+.badge {
+    display: inline-block;
+    margin-right: 0.2em;
+    position: relative;
+    height: 1em;
+    vertical-align: middle;
+    top: -0.1em;
+}
+
+.name {
+    margin-left: 0.2em;
+}
